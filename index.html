@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshay's - Portfolio</title>
+    <!-- <base href="akshayn87.github.io/"> -->
     <style>
-        * margin {
+        *margin {
             margin: 0;
             padding: 0;
         }
 
-        body {
-            background-color: rgb(0, 0, 33);
+        html,body {
+            /* /* background-color: rgb(0, 0, 33); */
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height:100%; 
+            margin:0;
+            padding: 0;
 
         }
 
@@ -48,7 +52,7 @@
 
 
 
-        @media screen and (max-width : 760px) {
+        @media screen and (max-width : 340px) {
 
             /*Make dropdown links appear inline*/
             nav ul {
@@ -169,26 +173,31 @@
             font-size: 9px;
             width: 200px;
         }
-        footer{
-            background-color: purple;
-            height:12vh;
-            border:00px;
-            margin: 0px;
-            padding: 0px;
-            justify-content: space-evenly;
-
-        }
-        .footerflex{
-            display: flex;
-            /* margin :23px 122px; */
-            padding :0 auto;
-            margin: 10px 2px;
-        }
+        
         .footerflex h3{
             margin: 0px;
             font-size: 14px;
         }
-    </style>
+        main .bgimg{
+        background-image: url("UnderConstruction.png");
+        /* min-height: 100%; */
+        background-position: center;
+        background-size:cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+         /* 4. Prevent the image from repeating */
+        background-repeat: no-repeat; /* */
+        /* display: block; */
+        
+        }
+        main .bgimg h1{
+            height: 80vh;
+            margin:0px;
+            min-height: 100%;
+        }
+        </style>
 </head>
 
 <body>
@@ -197,95 +206,20 @@
             <div class="left">Akshay's Portfolio</div>
             <div class="right"></div>
             <ul>
-                <li><a href="/">Home</a> </li>
-                <li><a href="/">About</a> </li>
-                <li><a href="/">Portfolio</a> </li>
-                <li><a href="/">Contact me</a> </li>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="portfolio.html">Portfolio</a> </li>
+                <li><a href="resume.html">Resume</a> </li>
+                <li><a href="contact.html">Contact me</a> </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="firstsection">
-            <div class="leftsection"> Hi, I am <span class="purple">Akshay Nikhare</span>
-                <div>I am a passionate</div>
-                <div>Automation Tester</div>
-            </div>
-            <div class="rightsection">
-                <img src="bg.jpg" alt="image">
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <h1>Work Experience</h1>
-            <div class="box">  
-                <div class="vertical">
-                  <img class="image-top" src="developer.png" alt="" />
-                    <div class="vertical-title">
-                        Quality Assurance Engineer (2016-2018)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quos, eveniet, vero
-                        exercitationem beatae dolores facilis repellat libero, officia illum quis ex magnam.
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="" />
-                    <div class="vertical-title">
-                        QA Engineer (2018 -2020)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fuga sapiente totam
-                        consectetur maxime laboriosam, dolore quae quo alias similique illum incidunt saepe.
-                    </div>
-                </div>
-                <div class="vertical">
-                     <img class="image-top" src="developer.png" alt="" />
-                    <div class="vertical-title">
-                        QA Engineer (2018 -2020)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fuga sapiente totam
-                        consectetur maxime laboriosam, dolore quae quo alias similique illum incidunt saepe.
-                    </div>
-                </div>
-                <div class="vertical">
-                     <img class="image-top" src="developer.png" alt="" />
-                    <div class="vertical-title">
-                        QA Engineer (2018 -2020)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fuga sapiente totam
-                        consectetur maxime laboriosam, dolore quae quo alias similique illum incidunt saepe.
-                    </div>
-                </div>
-                <div class="vertical">
-                     <img class="image-top" src="developer.png" alt="" />
-                    <div class="vertical-title">
-                        QA Engineer (2018 -2020)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fuga sapiente totam
-                        consectetur maxime laboriosam, dolore quae quo alias similique illum incidunt saepe.
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="bgimg">
+            <h1>Comming Soon</h1>
+        </div>
     </main>
     <footer>
-        <div class="footerflex">
-            <div class="footer-first">
-            <h3>Akshay's developer Portfolio</h3>
-            </div>
-            <div class="footer-second"></div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Home</a></li>
-            </ul>
-            <div class="footer-third"></div>
-            <div class="footer-fourth"></div>
-        </div>
+        
     </footer>
 </body>
 
