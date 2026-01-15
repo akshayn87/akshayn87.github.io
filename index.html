@@ -6,21 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshay's - Portfolio</title>
     <!-- <base href="akshayn87.github.io/"> -->
-    <style>
-        *margin {
+     <style>
+     *margin {
             margin: 0;
             padding: 0;
         }
 
-        html,body {
-            /* /* background-color: rgb(0, 0, 33); */
+        body{
+            background-color: rgb(0, 0, 33);
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            height:100%; 
-            margin:0;
+            margin: 0;
             padding: 0;
+            padding-bottom: 60px;
 
         }
+        @media screen and (min-width : 741px) {
+            .dropbtn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                display: none;
+            }
+          
 
         nav {
             display: flex;
@@ -49,36 +59,79 @@
             color: rgb(120, 18, 160);
             font-size: 1.10rem;
         }
+    }
 
 
+        @media screen and (max-width : 740px) {
 
-        @media screen and (max-width : 340px) {
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 80px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+           
+            }
+
+            .dropdown{
+                  position: relative;
+                  display: inline-block;
+                  margin-left: 80vw;
+            }
+
+            .dropbtn {
+                background-color: #04AA6D;
+                color: white;
+               
+                /* padding: 16px; */
+                font-size: 16px;
+               
+                border: none;
+            }
+
+            nav {
+                display: block;
+
+                background-color: rgb(18, 18, 160);
+            }
 
             /*Make dropdown links appear inline*/
             nav ul {
                 display: block;
+                background-color: aqua;
                 list-style-type: none;
                 position: static;
+                padding: 0;
+                margin:0;
+
 
             }
-
+            
             /*Create vertical spacing*/
             nav ul li {
                 list-style-type: none;
-                margin-bottom: 1px;
-            }
+                margin-bottom: 2px solid blue;
+                display: block;
+            } 
 
             nav ul li a {
                 text-decoration: none;
-                color: white;
+                color: blueviolet;
                 display: block;
                 float: none;
             }
-
+             
             nav ul li a:hover {
                 color: rgb(8, 245, 8);
                 font-size: 1.10rem;
-            }
+                display: block;
+            }  
+             .dropdown-content a:hover {background-color:purple;color:white;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
         }
 
@@ -202,15 +255,20 @@
 
 <body>
     <header>
-        <nav>
+         <nav>
             <div class="left">Akshay's Portfolio</div>
             <div class="right"></div>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="portfolio.html">Portfolio</a> </li>
-                <li><a href="resume.html">Resume</a> </li>
-                <li><a href="contact.html">Contact me</a> </li>
-            </ul>
+            <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="portfolio.html">Portfolio</a> </li>
+                    <li><a href="index.html">Resume</a> </li>
+                    <li><a href="contact.html">Contact me</a> </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>

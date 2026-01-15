@@ -7,7 +7,7 @@
     <title>Akshay's - Portfolio</title>
     <!-- <base href="akshayn87.github.io/"> -->
     <style>
-        * margin {
+        *margin {
             margin: 0;
             padding: 0;
         }
@@ -16,58 +16,108 @@
             background-color: rgb(0, 0, 33);
             color: white;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
 
         }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: rgb(18, 18, 160);
+        @media screen and (min-width : 741px) {
+            .dropbtn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                display: none;
+            }
+
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 100px;
+                background-color: rgb(18, 18, 160);
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                list-style-type: none;
+                margin: 0 23px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            nav ul li a:hover {
+                color: rgb(120, 18, 160);
+                font-size: 1.10rem;
+            }
         }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
 
-        nav ul li {
-            list-style-type: none;
-            margin: 0 23px;
-        }
+        @media screen and (max-width : 740px) {
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 80px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
 
-        nav ul li a:hover {
-            color: rgb(120, 18, 160);
-            font-size: 1.10rem;
-        }
+            }
 
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                margin-left: 80vw;
+            }
 
+            .dropbtn {
+                background-color: #04AA6D;
+                color: white;
 
-        @media screen and (max-width : 340px) {
+                /* padding: 16px; */
+                font-size: 16px;
+
+                border: none;
+            }
+
+            nav {
+                display: block;
+
+                background-color: rgb(18, 18, 160);
+            }
 
             /*Make dropdown links appear inline*/
             nav ul {
                 display: block;
+                background-color: aqua;
                 list-style-type: none;
                 position: static;
+                padding: 0;
+                margin: 0;
+
 
             }
 
             /*Create vertical spacing*/
             nav ul li {
                 list-style-type: none;
-                margin-bottom: 1px;
+                margin-bottom: 2px solid blue;
+                display: block;
             }
 
             nav ul li a {
                 text-decoration: none;
-                color: white;
+                color: blueviolet;
                 display: block;
                 float: none;
             }
@@ -75,6 +125,20 @@
             nav ul li a:hover {
                 color: rgb(8, 245, 8);
                 font-size: 1.10rem;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: purple;
+                color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: #3e8e41;
             }
 
         }
@@ -84,6 +148,8 @@
             margin: 20px 0;
             padding: 0px 0px 0px 38px;
         }
+
+
 
         .firstsection {
             display: flex;
@@ -143,7 +209,7 @@
             width: 1px;
             height: 93px;
             margin: 0px 100px;
-            border:0px;
+            border: 0px;
             padding: 0px;
         }
 
@@ -152,7 +218,7 @@
             position: relative;
             top: -23px;
             left: -13px;
-            padding:0;
+            padding: 0;
         }
 
         .vertical-title {
@@ -170,24 +236,32 @@
             font-size: 9px;
             width: 200px;
         }
-        footer{
-            
-            height:12vh;
-            border:00px;
+
+        footer {
+
+            height: 12vh;
+            border: 00px;
             margin: 0px;
             padding: 0px;
             justify-content: space-evenly;
 
         }
-        .footerflex{
+
+        .footerflex {
             display: flex;
             /* margin :23px 122px; */
-            padding :0 auto;
+            padding: 0 auto;
             margin: 10px 2px;
         }
-        .footerflex h3{
+
+        .footerflex h3 {
             margin: 0px;
             font-size: 14px;
+        }
+
+        #the-canvas {
+            border: 1px solid black;
+            direction: ltr;
         }
     </style>
 </head>
@@ -197,19 +271,24 @@
         <nav>
             <div class="left">Akshay's Portfolio</div>
             <div class="right"></div>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="#">Portfolio</a> </li>
-                <li><a href="resume.html">Resume</a> </li>
-                <li><a href="contact.html">Contact me</a> </li>
-            </ul>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="#">Portfolio</a> </li>
+                        <li><a href="resume.html">Resume</a> </li>
+                        <li><a href="contact.html">Contact me</a> </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        
+
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
