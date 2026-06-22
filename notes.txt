@@ -1,0 +1,1 @@
+Testser inputs the Automation Code.Then Automation Tools have the instructions to perform the test on application and the code executes the Testing on application 
