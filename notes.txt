@@ -1,1 +1,19 @@
-Testser inputs the Automation Code.Then Automation Tools have the instructions to perform the test on application and the code executes the Testing on application 
+Testser inputs the Automation Code.Then Automation Tools have the instructions to perform the test on application and the code executes the Testing on application                        What is selenium 
+Selenium is one of the popular Test Automation Tools
+playwright 
+Cypress
+tosca
+rest assured
+uft
+test complete 
+
+type of application that selenium can automate
+Web Applications 
+
+application divided as
+web application - website 
+desktop applications - Paint software engineer UFT
+mobile applications 
+
+
+is selenium free or paid
